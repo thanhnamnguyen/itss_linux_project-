@@ -1,0 +1,52 @@
+.historyBK {
+    text-align: justify;
+    background-color: #f3f3f3;
+    padding: 0 !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+.historyBK .row {
+    margin-left: 0 !important;
+}
+
+.dongMot {
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+.dongHai {
+    margin-top: 20px;
+}
+
+.imgBK img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.dateTime {
+    border-bottom: 1px dashed #b80f14;
+    font-weight: bold;
+}
+
+.contentText {
+    border-left: 3px solid #444;
+    border-bottom: 1px solid #8c1515;
+    padding: 15px;
+}
+.content_flex h2, .content_flex>span {
+    font-size: 28px !important;
+}
+
+.font-h2 {
+    font-size: 26px !important;
+}
+.khoaVien{margin: 0; padding: 0; } .khoaVien .noidung {float: left;margin-left: 12px;} .khoaVien span.redtext { color: #af0c10; } .khoaVien hr { clear: both; margin: 0; width: 100%; margin-top: 55px; border: 2px solid rgba(128, 128, 128, 0.18); } .khoaVien h3 { margin-bottom: 15px; font-weight: 500; font-size: 21px !important; } .khoaVien .container { margin-left: 1%; width: 100%; } .khoaVien p { margin: 0; line-height: 2; } .khoaVien .rows { clear: both; } .khoaVien .smallrow { clear: both; } .khoaVien .anhnho { width: 4%; height: auto; float: left; line-height: 1.43; margin-left: 0%; margin-top: 3px; } .khoaVien img { width: 100%; height: auto; } .khoaVien a:hover { color: #9c1010!important; } .khoaVien a { text-decoration: none; color: #333; line-height: 1; } .khoaVien h1 { font-size: 21px; text-transform: uppercase; color: #9e100e;}
+
+@media ( min-width : 992px) {
+    .col-three{
+        padding-top: 0px !important;
+    }
+}

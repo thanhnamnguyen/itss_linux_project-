@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <title>Login</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords"
+        content="Modern Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Meta tag Keywords -->
+    <!-- css files -->
+    <link rel="stylesheet" href="login_register/css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+    <link rel="stylesheet" href="login_register/css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Snippet" rel="stylesheet"><!--online fonts-->
+    <!-- //web-fonts -->
+</head>
+
+
+<body>
+
+    <div data-vide-bg="login_register/video/keyboard">
+        <div class="main-container">
+            <div class="header-w3l">
+                <h1>Online Notepad</h1>
+            </div>
+            <div class="main-content-agile">
+                <div class="w3ls-pro">
+                    <h2>Login Now</h2>
+                </div>
+                <p th:if="${(param.error != null)}" class="error">Wrong user, password or security pin!</p>
+                <p th:if="${verified}" class="info">Your account has been successfully registered!, Please sign-in</p>
+                <div class="sub-main-w3ls">
+                    <form class="form-signin" th:action="@{/mylogin}" method="post">
+                        <input type="text" name="username" class="form-control" placeholder="Enter Your Username"
+                            required="">
+                        
+                        <input type="password" name="password" class="form-control" placeholder="Enter Password"
+                            required="">
+                        
+                        <div class="checkbox-w3">
+							<span class="check-w3"><input type="checkbox" />Remember Me</span> 
+							<div class="clear"></div>
+						</div>
+                    
+                        <input type="submit" value="">
+                        </label> -->
+                        
+                    </form>
+                </div>
+                <a class="txt2" href="/register">Create an account <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i> </a>
+            </div>
+            <!--footer-->
+            <div class="footer">
+                <p>&copy; Modern Login Form. All rights reserved | Design by <a
+                        href="https://www.linkedin.com/in/nguyễn-đình-lộc-40a0b9220/">Lộc sẹo</a></p>
+            </div>
+            <!--//footer-->
+        </div>
+    </div>
+    <!-- js -->
+    <script type="text/javascript" src="login_register/js/jquery-2.1.4.min.js"></script><!--common-js-->
+    <script src="login_register/js/jquery.vide.min.js"></script><!--video-js-->
+    <!-- //js -->
+</body>
+
+</html>

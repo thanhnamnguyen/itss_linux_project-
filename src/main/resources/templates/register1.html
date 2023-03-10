@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+	<title>Sign up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords"
+		content="Modern Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="/login_register/css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+	<link rel="stylesheet" href="/login_register/css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Snippet" rel="stylesheet"><!--online fonts-->
+	<!-- //web-fonts -->
+</head>
+
+
+<body>
+	<!-- <nav class="navbar navbar-expand-sm  navbar-light crypt_nav">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Secret Note</a>
+			</div>
+			<ul class="nav navbar-nav">
+
+
+				<li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+				<li class="nav-item">
+					<a class="nav-link" href="/mylogin">login</a>
+				</li>
+			</ul>
+		</div>
+	</nav> -->
+
+
+	<div data-vide-bg="/login_register/video/keyboard">
+		<div class="main-container">
+			<!--header-->
+			<div class="header-w3l">
+				<h1>Online Notepad</h1>
+			</div>
+			<!--//header-->
+			<!--main-->
+			<div class="main-content-agile">
+				<div class="w3ls-pro">
+					<h2>Sign Up</h2>
+				</div>
+				<div class="sub-main-w3ls">
+					<form action="#" th:action="@{/register}" th:object="${user}" method="POST" enctype="utf8">
+						<form action="/register" th:object="${user}" method="POST" enctype="utf8">
+							<div th:if="${param.success}">
+								<div class="alert-success">
+									Registration complete! , you can now <a href="/login" th:href="@{/login}">login</a>
+								</div>
+							</div>
+
+							<div class="sub-main-w3ls">
+								<input type="text" th:field="*{firstName}" class="text" th:errorclass="is-invalid"
+									placeholder="Enter firstname" th:required="required">
+
+								<input type="text" th:field="*{lastName}" class="text" th:errorclass="is-invalid"
+									placeholder="Enter lastname" th:required="required">
+
+								<p class="alert-danger" role="alert" th:if="${dup}">
+									Invalid username
+								</p>
+
+								<input type="text" th:field="*{username}" class="text" th:errorclass="is-invalid"
+									placeholder="Enter your email" th:required="required">
+
+								<input type="password" th:field="*{password}" class="text w3lpass"
+									th:errorclass="is-invalid" placeholder="Enter your password" th:required="required">
+							</div>
+
+							<p th:if="${success}" class="alert-success" role="alert">
+								Successfully Register!
+							</p>
+
+							<input th:unless="${success}" type="submit" value="">
+							<p class="container signin">Already have an account? <a href="/mylogin">Sign in</a>.</p>
+						</form>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footer">
+			<p>&copy; Modern Registration Form. All rights reserved | Design by <a
+					href="https://www.linkedin.com/in/nguyễn-đình-lộc-40a0b9220/">Lộc sẹo</a></p>
+		</div>
+		<!--//footer-->
+	</div>
+	<!-- js -->
+	<script type="text/javascript" src="/login_register/js/jquery-2.1.4.min.js"></script><!--common-js-->
+	<script src="/login_register/js/jquery.vide.min.js"></script><!--video-js-->
+	<!-- //js -->
+</body>
+
+</html>
